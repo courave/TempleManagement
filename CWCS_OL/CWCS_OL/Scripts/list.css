@@ -1,0 +1,99 @@
+﻿#GridView1 {
+width: 100%;
+border: 1px solid #B0B0B0;
+}
+#GridView1 tbody {
+/* Kind of irrelevant unless your .css is alreadt doing something else */
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 80%;
+font-family:微软雅黑;
+vertical-align:middle;
+}
+#GridView1 th {
+border: 1px solid #B0B0B0;
+color: #444;
+font-size: 12px;
+font-weight: bold;
+text-align:center;
+padding: 3px 10px;
+color:White;
+}
+#GridView1 td {
+padding: 3px 10px;
+}
+#GridView1 tr {
+background: #F2F2F2;
+}
+#GridView2 {
+width: 100%;
+border: 1px solid #B0B0B0;
+}
+#GridView2 tbody {
+/* Kind of irrelevant unless your .css is alreadt doing something else */
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 80%;
+font-family:微软雅黑;
+vertical-align:middle;
+}
+#GridView2 th {
+border: 1px solid #B0B0B0;
+color: #444;
+font-size: 12px;
+font-weight: bold;
+text-align:center;
+padding: 3px 10px;
+color:White;
+}
+#GridView2 td {
+padding: 3px 10px;
+}
+#GridView2 tr {
+background: #F2F2F2;
+}
+body,input,select,option
+{
+    font-family:微软雅黑;
+}
+table
+{
+    color:Black;
+    background-color:White;
+    border-color:Black;
+    border-width:1px;
+    border-style:Solid;
+    border-collapse:collapse;
+}
+td,tr,th
+{
+    white-space:nowrap;
+    margin-left: 80px;
+    border-color:Black;
+    border-width:1px;
+    border-style:Solid;
+}
+th
+{
+    font-weight:bolder;
+}
+a:hover
+{
+    font-weight:bolder;
+}
+a:link
+{
+    color:Blue;
+}
+a:visited
+{
+    color:Blue;
+}
+a
+{
+    text-decoration:none;
+}

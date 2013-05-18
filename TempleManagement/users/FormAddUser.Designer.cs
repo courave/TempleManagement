@@ -49,93 +49,94 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(24, 12);
+            label1.Location = new System.Drawing.Point(24, 11);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(46, 13);
+            label1.Size = new System.Drawing.Size(47, 12);
             label1.TabIndex = 0;
             label1.Text = "用户名:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(36, 50);
+            label2.Location = new System.Drawing.Point(36, 46);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(34, 13);
+            label2.Size = new System.Drawing.Size(35, 12);
             label2.TabIndex = 0;
             label2.Text = "昵称:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(36, 88);
+            label3.Location = new System.Drawing.Point(36, 81);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(34, 13);
+            label3.Size = new System.Drawing.Size(35, 12);
             label3.TabIndex = 0;
             label3.Text = "密码:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(12, 126);
+            label4.Location = new System.Drawing.Point(12, 116);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(58, 13);
+            label4.Size = new System.Drawing.Size(59, 12);
             label4.TabIndex = 0;
             label4.Text = "密码确认:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new System.Drawing.Point(36, 164);
+            label5.Location = new System.Drawing.Point(36, 151);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(34, 13);
+            label5.Size = new System.Drawing.Size(35, 12);
             label5.TabIndex = 0;
             label5.Text = "角色:";
             // 
             // textBox_username
             // 
-            this.textBox_username.Location = new System.Drawing.Point(76, 9);
+            this.textBox_username.Location = new System.Drawing.Point(76, 8);
             this.textBox_username.Name = "textBox_username";
-            this.textBox_username.Size = new System.Drawing.Size(144, 20);
+            this.textBox_username.Size = new System.Drawing.Size(144, 21);
             this.textBox_username.TabIndex = 1;
             // 
             // textBox_nickname
             // 
-            this.textBox_nickname.Location = new System.Drawing.Point(76, 47);
+            this.textBox_nickname.Location = new System.Drawing.Point(76, 43);
             this.textBox_nickname.Name = "textBox_nickname";
-            this.textBox_nickname.Size = new System.Drawing.Size(144, 20);
+            this.textBox_nickname.Size = new System.Drawing.Size(144, 21);
             this.textBox_nickname.TabIndex = 2;
             // 
             // textBox_password
             // 
-            this.textBox_password.Location = new System.Drawing.Point(76, 85);
+            this.textBox_password.Location = new System.Drawing.Point(76, 78);
             this.textBox_password.Name = "textBox_password";
-            this.textBox_password.Size = new System.Drawing.Size(144, 20);
+            this.textBox_password.Size = new System.Drawing.Size(144, 21);
             this.textBox_password.TabIndex = 3;
             this.textBox_password.Enter += new System.EventHandler(this.textBox_password_Enter);
             this.textBox_password.Leave += new System.EventHandler(this.textBox_password_Leave);
             // 
             // textBox_passwordconfirm
             // 
-            this.textBox_passwordconfirm.Location = new System.Drawing.Point(76, 123);
+            this.textBox_passwordconfirm.Location = new System.Drawing.Point(76, 114);
             this.textBox_passwordconfirm.Name = "textBox_passwordconfirm";
-            this.textBox_passwordconfirm.Size = new System.Drawing.Size(144, 20);
+            this.textBox_passwordconfirm.Size = new System.Drawing.Size(144, 21);
             this.textBox_passwordconfirm.TabIndex = 4;
             this.textBox_passwordconfirm.Enter += new System.EventHandler(this.textBox_passwordconfirm_Enter);
             this.textBox_passwordconfirm.Leave += new System.EventHandler(this.textBox_passwordconfirm_Leave);
             // 
             // comboBox_role
             // 
+            this.comboBox_role.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_role.FormattingEnabled = true;
-            this.comboBox_role.Location = new System.Drawing.Point(76, 161);
+            this.comboBox_role.Location = new System.Drawing.Point(76, 149);
             this.comboBox_role.Name = "comboBox_role";
-            this.comboBox_role.Size = new System.Drawing.Size(144, 21);
+            this.comboBox_role.Size = new System.Drawing.Size(144, 20);
             this.comboBox_role.TabIndex = 5;
             // 
             // button_confirm
             // 
-            this.button_confirm.Location = new System.Drawing.Point(145, 208);
+            this.button_confirm.Location = new System.Drawing.Point(145, 192);
             this.button_confirm.Name = "button_confirm";
-            this.button_confirm.Size = new System.Drawing.Size(75, 23);
+            this.button_confirm.Size = new System.Drawing.Size(75, 21);
             this.button_confirm.TabIndex = 6;
             this.button_confirm.Text = "确定新增";
             this.button_confirm.UseVisualStyleBackColor = true;
@@ -143,9 +144,9 @@
             // 
             // FormAddUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(232, 243);
+            this.ClientSize = new System.Drawing.Size(232, 224);
             this.Controls.Add(this.button_confirm);
             this.Controls.Add(this.comboBox_role);
             this.Controls.Add(this.textBox_passwordconfirm);

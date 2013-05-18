@@ -47,4 +47,8 @@ public class ComboItem
         }
         return ((ComboItem)obj).Key == this._key && ((ComboItem)obj).Value == this._value;
     }
+    public override int GetHashCode()
+    {
+        return this.Key.GetHashCode();
+    }
 }
