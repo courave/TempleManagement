@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="employees\FormAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employees\FormAddEmployee.Designer.cs">
+      <DependentUpon>FormAddEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMainPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,7 @@
     <Compile Include="pub\CalendarColumn.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="pub\ChinaDate.cs" />
     <Compile Include="pub\ComboItem.cs" />
     <Compile Include="pub\Cryptography.cs" />
     <Compile Include="pub\DataBase.cs" />
@@ -90,6 +97,9 @@
     <Compile Include="users\FormUsers.Designer.cs">
       <DependentUpon>FormUsers.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="employees\FormAddEmployee.resx">
+      <DependentUpon>FormAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMainPanel.resx">
       <DependentUpon>FormMainPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +111,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="users\FormAddRole.resx">
       <DependentUpon>FormAddRole.cs</DependentUpon>
@@ -126,6 +137,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\default-avatar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

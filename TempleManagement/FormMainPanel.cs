@@ -39,5 +39,16 @@ namespace TempleManagement
         {
             Application.Exit();
         }
+
+        private void FormMainPanel_Load(object sender, EventArgs e)
+        {
+            toolStripTextBox_welcome.Text = "当前用户:"+pub.UserInfo.NickName+" "+pub.ChinaDate.GetChinaDate(DateTime.Now);
+        }
+
+        private void ToolStripMenuItem_employeeinfo_Click(object sender, EventArgs e)
+        {
+            employees.FormAddEmployee frmAddEmployee = new employees.FormAddEmployee();
+            frmAddEmployee.Show();
+        }
     }
 }
