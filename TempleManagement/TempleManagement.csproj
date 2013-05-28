@@ -50,6 +50,7 @@
     <Compile Include="employees\FormAddEmployee.Designer.cs">
       <DependentUpon>FormAddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="files\FileToDatabase.cs" />
     <Compile Include="FormMainPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +141,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\frontid.jpg" />
+    <None Include="Resources\backid.jpg" />
     <Content Include="Resources\default-avatar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

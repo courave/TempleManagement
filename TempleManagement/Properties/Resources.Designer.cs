@@ -60,9 +60,23 @@ namespace TempleManagement.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap backid {
+            get {
+                object obj = ResourceManager.GetObject("backid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap default_avatar {
             get {
                 object obj = ResourceManager.GetObject("default_avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap frontid {
+            get {
+                object obj = ResourceManager.GetObject("frontid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
