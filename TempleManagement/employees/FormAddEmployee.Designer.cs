@@ -63,6 +63,7 @@
             System.Windows.Forms.Label label1;
             System.Windows.Forms.Label label26;
             this.panel_emp = new System.Windows.Forms.Panel();
+            this.button_download = new System.Windows.Forms.Button();
             this.textBox_resumedocfileid = new System.Windows.Forms.TextBox();
             this.button_preview = new System.Windows.Forms.Button();
             this.button_upload = new System.Windows.Forms.Button();
@@ -105,7 +106,9 @@
             this.textBox_shoujieshi = new System.Windows.Forms.TextBox();
             this.textBox_chujiasiyuan = new System.Windows.Forms.TextBox();
             this.textBox_jiaoming = new System.Windows.Forms.TextBox();
-            this.button_download = new System.Windows.Forms.Button();
+            this.textBox_avatarid = new System.Windows.Forms.TextBox();
+            this.textBox_frontid = new System.Windows.Forms.TextBox();
+            this.textBox_backid = new System.Windows.Forms.TextBox();
             label29 = new System.Windows.Forms.Label();
             label34 = new System.Windows.Forms.Label();
             label33 = new System.Windows.Forms.Label();
@@ -521,13 +524,22 @@
             this.panel_emp.Size = new System.Drawing.Size(1090, 807);
             this.panel_emp.TabIndex = 0;
             // 
+            // button_download
+            // 
+            this.button_download.Location = new System.Drawing.Point(899, 528);
+            this.button_download.Name = "button_download";
+            this.button_download.Size = new System.Drawing.Size(75, 23);
+            this.button_download.TabIndex = 76;
+            this.button_download.Text = "下载";
+            this.button_download.UseVisualStyleBackColor = true;
+            this.button_download.Click += new System.EventHandler(this.button_download_Click);
+            // 
             // textBox_resumedocfileid
             // 
             this.textBox_resumedocfileid.Location = new System.Drawing.Point(1010, 530);
             this.textBox_resumedocfileid.Name = "textBox_resumedocfileid";
             this.textBox_resumedocfileid.Size = new System.Drawing.Size(54, 20);
             this.textBox_resumedocfileid.TabIndex = 75;
-            this.textBox_resumedocfileid.Visible = false;
             // 
             // button_preview
             // 
@@ -557,6 +569,7 @@
             this.button_confirm.TabIndex = 27;
             this.button_confirm.Text = "确定新增";
             this.button_confirm.UseVisualStyleBackColor = true;
+            this.button_confirm.Click += new System.EventHandler(this.button_confirm_Click);
             // 
             // pictureBox_backid
             // 
@@ -802,9 +815,13 @@
             this.pictureBox_avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_avatar.TabIndex = 23;
             this.pictureBox_avatar.TabStop = false;
+            this.pictureBox_avatar.Click += new System.EventHandler(this.pictureBox_avatar_Click);
             // 
             // groupBox_jiao
             // 
+            this.groupBox_jiao.Controls.Add(this.textBox_backid);
+            this.groupBox_jiao.Controls.Add(this.textBox_frontid);
+            this.groupBox_jiao.Controls.Add(this.textBox_avatarid);
             this.groupBox_jiao.Controls.Add(this.comboBox_zongjiaoxueli);
             this.groupBox_jiao.Controls.Add(this.textBox_jiaozhirenyuanzhengshuhao);
             this.groupBox_jiao.Controls.Add(this.dateTimePicker_shoujie);
@@ -898,15 +915,26 @@
             this.textBox_jiaoming.Size = new System.Drawing.Size(148, 20);
             this.textBox_jiaoming.TabIndex = 1;
             // 
-            // button_download
+            // textBox_avatarid
             // 
-            this.button_download.Location = new System.Drawing.Point(899, 528);
-            this.button_download.Name = "button_download";
-            this.button_download.Size = new System.Drawing.Size(75, 23);
-            this.button_download.TabIndex = 76;
-            this.button_download.Text = "下载";
-            this.button_download.UseVisualStyleBackColor = true;
-            this.button_download.Click += new System.EventHandler(this.button_download_Click);
+            this.textBox_avatarid.Location = new System.Drawing.Point(316, 84);
+            this.textBox_avatarid.Name = "textBox_avatarid";
+            this.textBox_avatarid.Size = new System.Drawing.Size(100, 20);
+            this.textBox_avatarid.TabIndex = 10;
+            // 
+            // textBox_frontid
+            // 
+            this.textBox_frontid.Location = new System.Drawing.Point(422, 85);
+            this.textBox_frontid.Name = "textBox_frontid";
+            this.textBox_frontid.Size = new System.Drawing.Size(100, 20);
+            this.textBox_frontid.TabIndex = 10;
+            // 
+            // textBox_backid
+            // 
+            this.textBox_backid.Location = new System.Drawing.Point(527, 84);
+            this.textBox_backid.Name = "textBox_backid";
+            this.textBox_backid.Size = new System.Drawing.Size(100, 20);
+            this.textBox_backid.TabIndex = 10;
             // 
             // FormAddEmployee
             // 
@@ -975,6 +1003,9 @@
         private System.Windows.Forms.Button button_preview;
         private System.Windows.Forms.Button button_upload;
         private System.Windows.Forms.Button button_download;
+        private System.Windows.Forms.TextBox textBox_backid;
+        private System.Windows.Forms.TextBox textBox_frontid;
+        private System.Windows.Forms.TextBox textBox_avatarid;
 
     }
 }

@@ -50,6 +50,12 @@
     <Compile Include="employees\FormAddEmployee.Designer.cs">
       <DependentUpon>FormAddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="employees\FormEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employees\FormEmployees.Designer.cs">
+      <DependentUpon>FormEmployees.cs</DependentUpon>
+    </Compile>
     <Compile Include="files\FileToDatabase.cs" />
     <Compile Include="FormMainPanel.cs">
       <SubType>Form</SubType>
@@ -101,6 +107,9 @@
     <EmbeddedResource Include="employees\FormAddEmployee.resx">
       <DependentUpon>FormAddEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="employees\FormEmployees.resx">
+      <DependentUpon>FormEmployees.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMainPanel.resx">
       <DependentUpon>FormMainPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +150,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\no_image.jpg" />
     <None Include="Resources\frontid.jpg" />
     <None Include="Resources\backid.jpg" />
     <Content Include="Resources\default-avatar.png" />

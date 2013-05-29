@@ -107,7 +107,7 @@ namespace TempleManagement.files
         {
             using (pub.DataBase db = new pub.DataBase())
             {
-                Image retImg=null;
+                Image retImg=Properties.Resources.no_image;
                 DataTable dt = db.ExecuteDataTable("SELECT FILE_DATA FROM FILE_MGR WHERE ID=" + FileId);
                 if (dt.Rows.Count != 1) return retImg;
                 try

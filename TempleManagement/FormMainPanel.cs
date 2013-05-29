@@ -47,8 +47,8 @@ namespace TempleManagement
 
         private void ToolStripMenuItem_employeeinfo_Click(object sender, EventArgs e)
         {
-            employees.FormAddEmployee frmAddEmployee = new employees.FormAddEmployee();
-            frmAddEmployee.Show();
+            employees.FormEmployees frmEmployees = new employees.FormEmployees();
+            frmEmployees.Show();
         }
     }
 }
