@@ -44,6 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cnCalendar\CalendarView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cnCalendar\ChinaDate.cs" />
+    <Compile Include="cnCalendar\ChineseCalendar.cs" />
+    <Compile Include="cnCalendar\FrmCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cnCalendar\FrmCalendar.designer.cs">
+      <DependentUpon>FrmCalendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="employees\FormAddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +85,18 @@
     <Compile Include="pub\DataBase.cs" />
     <Compile Include="pub\TreeViewCheck.cs" />
     <Compile Include="pub\UserInfo.cs" />
+    <Compile Include="shizhu\FormAddShizhu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shizhu\FormAddShizhu.Designer.cs">
+      <DependentUpon>FormAddShizhu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shizhu\FormShizhu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shizhu\FormShizhu.Designer.cs">
+      <DependentUpon>FormShizhu.cs</DependentUpon>
+    </Compile>
     <Compile Include="users\FormAddRole.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +127,9 @@
     <Compile Include="users\FormUsers.Designer.cs">
       <DependentUpon>FormUsers.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="cnCalendar\FrmCalendar.resx">
+      <DependentUpon>FrmCalendar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="employees\FormAddEmployee.resx">
       <DependentUpon>FormAddEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +149,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="shizhu\FormAddShizhu.resx">
+      <DependentUpon>FormAddShizhu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shizhu\FormShizhu.resx">
+      <DependentUpon>FormShizhu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="users\FormAddRole.resx">
       <DependentUpon>FormAddRole.cs</DependentUpon>
     </EmbeddedResource>

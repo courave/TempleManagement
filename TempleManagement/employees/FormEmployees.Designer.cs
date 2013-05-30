@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_xingming;
+            System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_jiaoming;
+            System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_emptype;
+            System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_rusidate;
+            System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_chujiadate;
+            System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_shoujiedate;
+            System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_lisidate;
+            System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_general;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.toolStripTextBox_xingming = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox_jiaoming = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripComboBox_emptype = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripTextBox_rusidate = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox_chujiadate = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox_shoujiedate = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox_lisidate = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox_general = new System.Windows.Forms.ToolStripTextBox();
             this.menuStrip_employees = new System.Windows.Forms.MenuStrip();
             this.ToolStripMenuItem_addrecord = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_modifyrecord = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_lisicheck = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_deleterecord = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_search = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.ToolStripMenuItem_showlisi = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_reset = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AVATAR = new System.Windows.Forms.DataGridViewImageColumn();
@@ -103,10 +123,142 @@
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ToolStripMenuItem_search = new System.Windows.Forms.ToolStripMenuItem();
+            ToolStripMenuItem_xingming = new System.Windows.Forms.ToolStripMenuItem();
+            ToolStripMenuItem_jiaoming = new System.Windows.Forms.ToolStripMenuItem();
+            ToolStripMenuItem_emptype = new System.Windows.Forms.ToolStripMenuItem();
+            ToolStripMenuItem_rusidate = new System.Windows.Forms.ToolStripMenuItem();
+            ToolStripMenuItem_chujiadate = new System.Windows.Forms.ToolStripMenuItem();
+            ToolStripMenuItem_shoujiedate = new System.Windows.Forms.ToolStripMenuItem();
+            ToolStripMenuItem_lisidate = new System.Windows.Forms.ToolStripMenuItem();
+            ToolStripMenuItem_general = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_employees.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ToolStripMenuItem_xingming
+            // 
+            ToolStripMenuItem_xingming.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox_xingming});
+            ToolStripMenuItem_xingming.Name = "ToolStripMenuItem_xingming";
+            ToolStripMenuItem_xingming.Size = new System.Drawing.Size(158, 22);
+            ToolStripMenuItem_xingming.Text = "姓名";
+            // 
+            // toolStripTextBox_xingming
+            // 
+            this.toolStripTextBox_xingming.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox_xingming.Name = "toolStripTextBox_xingming";
+            this.toolStripTextBox_xingming.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox_xingming.TextChanged += new System.EventHandler(this.toolStripTextBox_xingming_TextChanged);
+            // 
+            // ToolStripMenuItem_jiaoming
+            // 
+            ToolStripMenuItem_jiaoming.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox_jiaoming});
+            ToolStripMenuItem_jiaoming.Name = "ToolStripMenuItem_jiaoming";
+            ToolStripMenuItem_jiaoming.Size = new System.Drawing.Size(158, 22);
+            ToolStripMenuItem_jiaoming.Text = "教(法,经)名";
+            // 
+            // toolStripTextBox_jiaoming
+            // 
+            this.toolStripTextBox_jiaoming.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox_jiaoming.Name = "toolStripTextBox_jiaoming";
+            this.toolStripTextBox_jiaoming.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox_jiaoming.TextChanged += new System.EventHandler(this.toolStripTextBox_jiaoming_TextChanged);
+            // 
+            // ToolStripMenuItem_emptype
+            // 
+            ToolStripMenuItem_emptype.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripComboBox_emptype});
+            ToolStripMenuItem_emptype.Name = "ToolStripMenuItem_emptype";
+            ToolStripMenuItem_emptype.Size = new System.Drawing.Size(158, 22);
+            ToolStripMenuItem_emptype.Text = "职工类别";
+            // 
+            // toolStripComboBox_emptype
+            // 
+            this.toolStripComboBox_emptype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.toolStripComboBox_emptype.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.toolStripComboBox_emptype.Name = "toolStripComboBox_emptype";
+            this.toolStripComboBox_emptype.Size = new System.Drawing.Size(121, 23);
+            this.toolStripComboBox_emptype.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox_emptype_SelectedIndexChanged);
+            // 
+            // ToolStripMenuItem_rusidate
+            // 
+            ToolStripMenuItem_rusidate.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox_rusidate});
+            ToolStripMenuItem_rusidate.Name = "ToolStripMenuItem_rusidate";
+            ToolStripMenuItem_rusidate.Size = new System.Drawing.Size(158, 22);
+            ToolStripMenuItem_rusidate.Text = "入寺时间";
+            // 
+            // toolStripTextBox_rusidate
+            // 
+            this.toolStripTextBox_rusidate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox_rusidate.Name = "toolStripTextBox_rusidate";
+            this.toolStripTextBox_rusidate.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox_rusidate.ToolTipText = ">20130526";
+            this.toolStripTextBox_rusidate.TextChanged += new System.EventHandler(this.toolStripTextBox_rusidate_TextChanged);
+            // 
+            // ToolStripMenuItem_chujiadate
+            // 
+            ToolStripMenuItem_chujiadate.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox_chujiadate});
+            ToolStripMenuItem_chujiadate.Name = "ToolStripMenuItem_chujiadate";
+            ToolStripMenuItem_chujiadate.Size = new System.Drawing.Size(158, 22);
+            ToolStripMenuItem_chujiadate.Text = "出家时间";
+            // 
+            // toolStripTextBox_chujiadate
+            // 
+            this.toolStripTextBox_chujiadate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox_chujiadate.Name = "toolStripTextBox_chujiadate";
+            this.toolStripTextBox_chujiadate.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox_chujiadate.ToolTipText = ">20130526";
+            this.toolStripTextBox_chujiadate.TextChanged += new System.EventHandler(this.toolStripTextBox_chujiadate_TextChanged);
+            // 
+            // ToolStripMenuItem_shoujiedate
+            // 
+            ToolStripMenuItem_shoujiedate.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox_shoujiedate});
+            ToolStripMenuItem_shoujiedate.Name = "ToolStripMenuItem_shoujiedate";
+            ToolStripMenuItem_shoujiedate.Size = new System.Drawing.Size(158, 22);
+            ToolStripMenuItem_shoujiedate.Text = "受戒时间";
+            ToolStripMenuItem_shoujiedate.TextChanged += new System.EventHandler(this.ToolStripMenuItem_shoujiedate_TextChanged);
+            // 
+            // toolStripTextBox_shoujiedate
+            // 
+            this.toolStripTextBox_shoujiedate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox_shoujiedate.Name = "toolStripTextBox_shoujiedate";
+            this.toolStripTextBox_shoujiedate.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox_shoujiedate.ToolTipText = ">20130526";
+            // 
+            // ToolStripMenuItem_lisidate
+            // 
+            ToolStripMenuItem_lisidate.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox_lisidate});
+            ToolStripMenuItem_lisidate.Name = "ToolStripMenuItem_lisidate";
+            ToolStripMenuItem_lisidate.Size = new System.Drawing.Size(158, 22);
+            ToolStripMenuItem_lisidate.Text = "离寺时间";
+            ToolStripMenuItem_lisidate.TextChanged += new System.EventHandler(this.ToolStripMenuItem_lisidate_TextChanged);
+            // 
+            // toolStripTextBox_lisidate
+            // 
+            this.toolStripTextBox_lisidate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox_lisidate.Name = "toolStripTextBox_lisidate";
+            this.toolStripTextBox_lisidate.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox_lisidate.ToolTipText = ">20130526";
+            // 
+            // ToolStripMenuItem_general
+            // 
+            ToolStripMenuItem_general.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox_general});
+            ToolStripMenuItem_general.Name = "ToolStripMenuItem_general";
+            ToolStripMenuItem_general.Size = new System.Drawing.Size(158, 22);
+            ToolStripMenuItem_general.Text = "其他通用搜索";
+            // 
+            // toolStripTextBox_general
+            // 
+            this.toolStripTextBox_general.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox_general.Name = "toolStripTextBox_general";
+            this.toolStripTextBox_general.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox_general.TextChanged += new System.EventHandler(this.toolStripTextBox_general_TextChanged);
             // 
             // menuStrip_employees
             // 
@@ -149,6 +301,43 @@
             this.ToolStripMenuItem_deleterecord.Size = new System.Drawing.Size(67, 20);
             this.ToolStripMenuItem_deleterecord.Text = "删除记录";
             this.ToolStripMenuItem_deleterecord.Click += new System.EventHandler(this.ToolStripMenuItem_deleterecord_Click);
+            // 
+            // ToolStripMenuItem_search
+            // 
+            this.ToolStripMenuItem_search.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            ToolStripMenuItem_xingming,
+            ToolStripMenuItem_jiaoming,
+            ToolStripMenuItem_emptype,
+            ToolStripMenuItem_rusidate,
+            ToolStripMenuItem_chujiadate,
+            ToolStripMenuItem_shoujiedate,
+            ToolStripMenuItem_lisidate,
+            ToolStripMenuItem_general,
+            this.toolStripSeparator1,
+            this.ToolStripMenuItem_showlisi,
+            this.ToolStripMenuItem_reset});
+            this.ToolStripMenuItem_search.Name = "ToolStripMenuItem_search";
+            this.ToolStripMenuItem_search.Size = new System.Drawing.Size(43, 20);
+            this.ToolStripMenuItem_search.Text = "搜索";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(155, 6);
+            // 
+            // ToolStripMenuItem_showlisi
+            // 
+            this.ToolStripMenuItem_showlisi.Name = "ToolStripMenuItem_showlisi";
+            this.ToolStripMenuItem_showlisi.Size = new System.Drawing.Size(158, 22);
+            this.ToolStripMenuItem_showlisi.Text = "显示已离寺人员";
+            this.ToolStripMenuItem_showlisi.Click += new System.EventHandler(this.ToolStripMenuItem_showlisi_Click);
+            // 
+            // ToolStripMenuItem_reset
+            // 
+            this.ToolStripMenuItem_reset.Name = "ToolStripMenuItem_reset";
+            this.ToolStripMenuItem_reset.Size = new System.Drawing.Size(158, 22);
+            this.ToolStripMenuItem_reset.Text = "重置搜索条件";
+            this.ToolStripMenuItem_reset.Click += new System.EventHandler(this.ToolStripMenuItem_reset_Click);
             // 
             // dgvEmployee
             // 
@@ -750,12 +939,6 @@
             this.dataGridViewTextBoxColumn30.HeaderText = "备注";
             this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
             // 
-            // ToolStripMenuItem_search
-            // 
-            this.ToolStripMenuItem_search.Name = "ToolStripMenuItem_search";
-            this.ToolStripMenuItem_search.Size = new System.Drawing.Size(43, 20);
-            this.ToolStripMenuItem_search.Text = "搜索";
-            // 
             // FormEmployees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -765,7 +948,7 @@
             this.Controls.Add(this.menuStrip_employees);
             this.MainMenuStrip = this.menuStrip_employees;
             this.Name = "FormEmployees";
-            this.Text = "FormEmployees";
+            this.Text = "职工信息管理";
             this.Load += new System.EventHandler(this.FormEmployees_Load);
             this.menuStrip_employees.ResumeLayout(false);
             this.menuStrip_employees.PerformLayout();
@@ -852,5 +1035,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BEIZHU;
         private CalendarColumn LISI_TIME;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_search;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox_xingming;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox_jiaoming;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox_emptype;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox_rusidate;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox_chujiadate;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox_shoujiedate;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox_lisidate;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox_general;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_showlisi;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_reset;
     }
 }

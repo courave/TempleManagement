@@ -50,5 +50,11 @@ namespace TempleManagement
             employees.FormEmployees frmEmployees = new employees.FormEmployees();
             frmEmployees.Show();
         }
+
+        private void ToolStripMenuItem_shizhuinfo_Click(object sender, EventArgs e)
+        {
+            shizhu.FormShizhu frmShizhu = new shizhu.FormShizhu();
+            frmShizhu.Show();
+        }
     }
 }
