@@ -5,9 +5,9 @@ using System.Text;
 
 public class ComboItem
 {
-    private string _key;
+    private Object _key;
 
-    public string Key
+    public Object Key
     {
         get { return _key; }
         set { _key = value; }
@@ -21,7 +21,7 @@ public class ComboItem
         set { this._value = value; }
     }
 
-    public ComboItem(string key, string value)
+    public ComboItem(Object key, string value)
     {
         _key = key;
         _value = value;
@@ -39,7 +39,7 @@ public class ComboItem
     {
         return !ComboItem.Equals(item1, item2);
     }
-    public override bool Equals(object obj)
+    public override bool Equals(Object obj)
     {
         if (GetType() != obj.GetType())
         {

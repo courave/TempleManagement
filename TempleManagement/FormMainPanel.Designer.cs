@@ -35,10 +35,11 @@
             this.ToolStripMenuItem_logout = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_employeeinfo = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_main = new System.Windows.Forms.MenuStrip();
-            this.toolStripTextBox_welcome = new System.Windows.Forms.ToolStripTextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.toolStripMenuItem_shizhu = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_shizhuinfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox_welcome = new System.Windows.Forms.ToolStripTextBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.ToolStripMenuItem_qingjiajiaban = new System.Windows.Forms.ToolStripMenuItem();
             ToolStripMenuItem_users = new System.Windows.Forms.ToolStripMenuItem();
             ToolStripMenuItem_employees = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_main.SuspendLayout();
@@ -78,7 +79,8 @@
             // ToolStripMenuItem_employees
             // 
             ToolStripMenuItem_employees.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem_employeeinfo});
+            this.ToolStripMenuItem_employeeinfo,
+            this.ToolStripMenuItem_qingjiajiaban});
             ToolStripMenuItem_employees.Name = "ToolStripMenuItem_employees";
             ToolStripMenuItem_employees.Size = new System.Drawing.Size(67, 20);
             ToolStripMenuItem_employees.Text = "员工管理";
@@ -102,6 +104,21 @@
             this.menuStrip_main.Size = new System.Drawing.Size(898, 24);
             this.menuStrip_main.TabIndex = 0;
             // 
+            // toolStripMenuItem_shizhu
+            // 
+            this.toolStripMenuItem_shizhu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem_shizhuinfo});
+            this.toolStripMenuItem_shizhu.Name = "toolStripMenuItem_shizhu";
+            this.toolStripMenuItem_shizhu.Size = new System.Drawing.Size(67, 20);
+            this.toolStripMenuItem_shizhu.Text = "施主管理";
+            // 
+            // ToolStripMenuItem_shizhuinfo
+            // 
+            this.ToolStripMenuItem_shizhuinfo.Name = "ToolStripMenuItem_shizhuinfo";
+            this.ToolStripMenuItem_shizhuinfo.Size = new System.Drawing.Size(146, 22);
+            this.ToolStripMenuItem_shizhuinfo.Text = "施主信息管理";
+            this.ToolStripMenuItem_shizhuinfo.Click += new System.EventHandler(this.ToolStripMenuItem_shizhuinfo_Click);
+            // 
             // toolStripTextBox_welcome
             // 
             this.toolStripTextBox_welcome.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -118,20 +135,12 @@
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // toolStripMenuItem_shizhu
+            // ToolStripMenuItem_qingjiajiaban
             // 
-            this.toolStripMenuItem_shizhu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem_shizhuinfo});
-            this.toolStripMenuItem_shizhu.Name = "toolStripMenuItem_shizhu";
-            this.toolStripMenuItem_shizhu.Size = new System.Drawing.Size(67, 20);
-            this.toolStripMenuItem_shizhu.Text = "施主管理";
-            // 
-            // ToolStripMenuItem_shizhuinfo
-            // 
-            this.ToolStripMenuItem_shizhuinfo.Name = "ToolStripMenuItem_shizhuinfo";
-            this.ToolStripMenuItem_shizhuinfo.Size = new System.Drawing.Size(152, 22);
-            this.ToolStripMenuItem_shizhuinfo.Text = "施主信息管理";
-            this.ToolStripMenuItem_shizhuinfo.Click += new System.EventHandler(this.ToolStripMenuItem_shizhuinfo_Click);
+            this.ToolStripMenuItem_qingjiajiaban.Name = "ToolStripMenuItem_qingjiajiaban";
+            this.ToolStripMenuItem_qingjiajiaban.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem_qingjiajiaban.Text = "请假加班管理";
+            this.ToolStripMenuItem_qingjiajiaban.Click += new System.EventHandler(this.ToolStripMenuItem_qingjiajiaban_Click);
             // 
             // FormMainPanel
             // 
@@ -163,6 +172,7 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_employeeinfo;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_shizhu;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_shizhuinfo;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_qingjiajiaban;
     }
 }
 

@@ -42,7 +42,7 @@ namespace TempleManagement
 
         private void FormMainPanel_Load(object sender, EventArgs e)
         {
-            toolStripTextBox_welcome.Text = "当前用户:"+pub.UserInfo.NickName+" "+pub.ChinaDate.GetChinaDate(DateTime.Now);
+            toolStripTextBox_welcome.Text = "当前用户:"+pub.UserInfo.NickName+" "+ChinaDate.GetChinaDate(DateTime.Now);
         }
 
         private void ToolStripMenuItem_employeeinfo_Click(object sender, EventArgs e)
@@ -55,6 +55,11 @@ namespace TempleManagement
         {
             shizhu.FormShizhu frmShizhu = new shizhu.FormShizhu();
             frmShizhu.Show();
+        }
+
+        private void ToolStripMenuItem_qingjiajiaban_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
