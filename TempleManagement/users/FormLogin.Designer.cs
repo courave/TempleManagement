@@ -111,6 +111,7 @@
             this.Name = "FormLogin";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "登陆";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.FormLogin_Load);
