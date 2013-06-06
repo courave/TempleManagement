@@ -75,7 +75,8 @@ namespace TempleManagement.fahui
             ListViewItem lvi = listView_fahui.SelectedItems[0];
             //todo
             //MessageBox.Show(lvi.ImageKey);
-            throw new Exception("The method or operation is not implemented.");
+            FormFahuiDetail frmFahuiDetail = new FormFahuiDetail(lvi.ImageKey);
+            frmFahuiDetail.ShowDialog();
         }
 
         private void ToolStripMenuItem_addfahui_Click(object sender, EventArgs e)

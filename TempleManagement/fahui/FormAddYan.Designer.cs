@@ -54,7 +54,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(48, 46);
+            label1.Location = new System.Drawing.Point(45, 29);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(34, 13);
             label1.TabIndex = 0;
@@ -63,7 +63,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(48, 83);
+            label2.Location = new System.Drawing.Point(45, 66);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(34, 13);
             label2.TabIndex = 0;
@@ -72,7 +72,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(12, 120);
+            label3.Location = new System.Drawing.Point(9, 103);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(70, 13);
             label3.TabIndex = 0;
@@ -81,7 +81,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(12, 157);
+            label4.Location = new System.Drawing.Point(9, 140);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(70, 13);
             label4.TabIndex = 0;
@@ -90,7 +90,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new System.Drawing.Point(12, 194);
+            label5.Location = new System.Drawing.Point(9, 177);
             label5.Name = "label5";
             label5.Size = new System.Drawing.Size(70, 13);
             label5.TabIndex = 0;
@@ -99,7 +99,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(12, 231);
+            label6.Location = new System.Drawing.Point(9, 214);
             label6.Name = "label6";
             label6.Size = new System.Drawing.Size(70, 13);
             label6.TabIndex = 0;
@@ -117,64 +117,65 @@
             "宙",
             "洪",
             "荒"});
-            this.comboBox_zihao.Location = new System.Drawing.Point(88, 43);
+            this.comboBox_zihao.Location = new System.Drawing.Point(85, 26);
             this.comboBox_zihao.Name = "comboBox_zihao";
             this.comboBox_zihao.Size = new System.Drawing.Size(184, 21);
             this.comboBox_zihao.TabIndex = 1;
             // 
             // textBox_zuoci
             // 
-            this.textBox_zuoci.Location = new System.Drawing.Point(88, 80);
+            this.textBox_zuoci.Location = new System.Drawing.Point(85, 63);
             this.textBox_zuoci.Name = "textBox_zuoci";
             this.textBox_zuoci.Size = new System.Drawing.Size(184, 20);
             this.textBox_zuoci.TabIndex = 2;
             // 
             // textBox_zhuzhao1
             // 
-            this.textBox_zhuzhao1.Location = new System.Drawing.Point(88, 117);
+            this.textBox_zhuzhao1.Location = new System.Drawing.Point(85, 100);
             this.textBox_zhuzhao1.Name = "textBox_zhuzhao1";
             this.textBox_zhuzhao1.Size = new System.Drawing.Size(184, 20);
-            this.textBox_zhuzhao1.TabIndex = 2;
+            this.textBox_zhuzhao1.TabIndex = 3;
             // 
             // textBox_zhuzhao2
             // 
-            this.textBox_zhuzhao2.Location = new System.Drawing.Point(88, 154);
+            this.textBox_zhuzhao2.Location = new System.Drawing.Point(85, 137);
             this.textBox_zhuzhao2.Name = "textBox_zhuzhao2";
             this.textBox_zhuzhao2.Size = new System.Drawing.Size(184, 20);
-            this.textBox_zhuzhao2.TabIndex = 2;
+            this.textBox_zhuzhao2.TabIndex = 4;
             // 
             // textBox_zhuzhao3
             // 
-            this.textBox_zhuzhao3.Location = new System.Drawing.Point(88, 191);
+            this.textBox_zhuzhao3.Location = new System.Drawing.Point(85, 174);
             this.textBox_zhuzhao3.Name = "textBox_zhuzhao3";
             this.textBox_zhuzhao3.Size = new System.Drawing.Size(184, 20);
-            this.textBox_zhuzhao3.TabIndex = 2;
+            this.textBox_zhuzhao3.TabIndex = 5;
             // 
             // textBox_zhuzhao4
             // 
-            this.textBox_zhuzhao4.Location = new System.Drawing.Point(88, 228);
+            this.textBox_zhuzhao4.Location = new System.Drawing.Point(85, 211);
             this.textBox_zhuzhao4.Name = "textBox_zhuzhao4";
             this.textBox_zhuzhao4.Size = new System.Drawing.Size(184, 20);
-            this.textBox_zhuzhao4.TabIndex = 2;
+            this.textBox_zhuzhao4.TabIndex = 6;
             // 
             // button_confirm
             // 
-            this.button_confirm.Location = new System.Drawing.Point(197, 269);
+            this.button_confirm.Location = new System.Drawing.Point(194, 252);
             this.button_confirm.Name = "button_confirm";
             this.button_confirm.Size = new System.Drawing.Size(75, 23);
-            this.button_confirm.TabIndex = 3;
+            this.button_confirm.TabIndex = 7;
             this.button_confirm.Text = "确定新增";
             this.button_confirm.UseVisualStyleBackColor = true;
             this.button_confirm.Click += new System.EventHandler(this.button_confirm_Click);
             // 
             // button_switch
             // 
-            this.button_switch.Location = new System.Drawing.Point(12, 269);
+            this.button_switch.Location = new System.Drawing.Point(9, 252);
             this.button_switch.Name = "button_switch";
             this.button_switch.Size = new System.Drawing.Size(75, 23);
-            this.button_switch.TabIndex = 4;
+            this.button_switch.TabIndex = 0;
             this.button_switch.Text = "转到往生";
             this.button_switch.UseVisualStyleBackColor = true;
+            this.button_switch.Click += new System.EventHandler(this.button_switch_Click);
             // 
             // lblFahui
             // 
@@ -182,13 +183,13 @@
             this.lblFahui.Location = new System.Drawing.Point(9, 9);
             this.lblFahui.Name = "lblFahui";
             this.lblFahui.Size = new System.Drawing.Size(0, 13);
-            this.lblFahui.TabIndex = 5;
+            this.lblFahui.TabIndex = 0;
             // 
             // FormAddYan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 298);
+            this.ClientSize = new System.Drawing.Size(284, 286);
             this.Controls.Add(this.lblFahui);
             this.Controls.Add(this.button_switch);
             this.Controls.Add(this.button_confirm);
@@ -205,7 +206,7 @@
             this.Controls.Add(label2);
             this.Controls.Add(label1);
             this.Name = "FormAddYan";
-            this.Text = "添加";
+            this.Text = "添加法会-延生";
             this.Load += new System.EventHandler(this.FormAddYan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -73,6 +73,12 @@
     <Compile Include="fahui\FormAddFahui.Designer.cs">
       <DependentUpon>FormAddFahui.cs</DependentUpon>
     </Compile>
+    <Compile Include="fahui\FormAddWang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fahui\FormAddWang.Designer.cs">
+      <DependentUpon>FormAddWang.cs</DependentUpon>
+    </Compile>
     <Compile Include="fahui\FormAddYan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     </Compile>
     <Compile Include="fahui\FormFahui.Designer.cs">
       <DependentUpon>FormFahui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fahui\FormFahuiDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fahui\FormFahuiDetail.Designer.cs">
+      <DependentUpon>FormFahuiDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="files\FileToDatabase.cs" />
     <Compile Include="FormMainPanel.cs">
@@ -157,11 +169,17 @@
     <EmbeddedResource Include="fahui\FormAddFahui.resx">
       <DependentUpon>FormAddFahui.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fahui\FormAddWang.resx">
+      <DependentUpon>FormAddWang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fahui\FormAddYan.resx">
       <DependentUpon>FormAddYan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fahui\FormFahui.resx">
       <DependentUpon>FormFahui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fahui\FormFahuiDetail.resx">
+      <DependentUpon>FormFahuiDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMainPanel.resx">
       <DependentUpon>FormMainPanel.cs</DependentUpon>

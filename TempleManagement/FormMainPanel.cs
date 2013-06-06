@@ -93,7 +93,9 @@ namespace TempleManagement
             ToolStripItem item = (ToolStripItem)sender;
             String year = item.Text.Substring(0, 4);
             String fahuiname = item.Text.Substring(5);
-            MessageBox.Show("Year:" + year + "\nFahui:" + fahuiname);
+            //MessageBox.Show("Year:" + year + "\nFahui:" + fahuiname);
+            fahui.FormFahuiDetail frmFahuiDetail = new fahui.FormFahuiDetail(year,fahuiname);
+            frmFahuiDetail.Show();
         }
     }
 }

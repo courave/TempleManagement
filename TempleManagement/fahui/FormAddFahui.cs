@@ -75,11 +75,10 @@ namespace TempleManagement.fahui
                         DialogResult dr = MessageBox.Show(Msg, "已存在该法会", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                         if (dr == DialogResult.Yes)
                         {
-                            //throw new Exception("The method or operation is not implemented.");
                             //直接进入
-                            FormAddYan frmAddYan = new FormAddYan(year.ToString(), fahuiname);
-                            frmAddYan.Show();
-                            frmAddYan.TopLevel = true;
+                            FormAddWang frmAddWang1 = new FormAddWang(year.ToString(), fahuiname);
+                            frmAddWang1.Show();
+                            frmAddWang1.TopLevel = true;
                             this.Close();
                             return;
                         }
@@ -106,11 +105,9 @@ namespace TempleManagement.fahui
                         return;
                     }
                 }
-                //todo
-                //throw new Exception("The method or operation is not implemented.");
-                FormAddYan frmAddYan1 = new FormAddYan(fahuiid);
-                frmAddYan1.Show();
-                frmAddYan1.TopLevel = true;
+                this.Hide();
+                FormAddWang frmAddWang = new FormAddWang(fahuiid);
+                frmAddWang.ShowDialog();
                 this.Close();
             }
         }
