@@ -134,6 +134,18 @@ namespace TempleManagement.fahui
             dgvWang.ClearSelection();
         }
 
+        private void ToolStripMenuItem_printwangsingle_Click(object sender, EventArgs e)
+        {
+            print.FormPrintWangSingle frmPrintWangSingle = new print.FormPrintWangSingle(fahuiid);
+            frmPrintWangSingle.ShowDialog();
+        }
+
+        private void ToolStripMenuItem_wangmultiple_Click(object sender, EventArgs e)
+        {
+            print.FormPrintWangMultiple frmPrintWangMultiple = new print.FormPrintWangMultiple(fahuiid);
+            frmPrintWangMultiple.ShowDialog();
+        }
+
 
     }
 }

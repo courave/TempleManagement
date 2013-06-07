@@ -257,6 +257,7 @@
             this.button_switch.Name = "button_switch";
             this.button_switch.Size = new System.Drawing.Size(75, 23);
             this.button_switch.TabIndex = 0;
+            this.button_switch.TabStop = false;
             this.button_switch.Text = "转到延生";
             this.button_switch.UseVisualStyleBackColor = true;
             this.button_switch.Click += new System.EventHandler(this.button_switch_Click);
