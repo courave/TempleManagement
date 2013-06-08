@@ -88,7 +88,7 @@ namespace TempleManagement.print
                 String[] yss = ys.Split(';');
                 if (yss.Count() > 0)
                 {
-                    wangSingle.ys3 = yss[0].Trim(';');
+                    wangSingle.ys1 = yss[0].Trim(';');
                 }
                 if (yss.Count() > 1)
                 {
@@ -96,7 +96,7 @@ namespace TempleManagement.print
                 }
                 if (yss.Count() > 2)
                 {
-                    wangSingle.ys1 = yss[2].Trim(';');
+                    wangSingle.ys3 = yss[2].Trim(';');
                 }
                 if (yss.Count() > 3)
                 {

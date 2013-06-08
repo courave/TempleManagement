@@ -33,9 +33,10 @@
             System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
             System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_zihao;
             System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_wangzihao;
+            System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
             System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_print;
             System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_printwang;
-            System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+            System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_printyan;
             this.ToolStripMenuItem_addwang = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_addyan = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_modify = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,11 +56,11 @@
             this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
             this.延生ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox4 = new System.Windows.Forms.ToolStripTextBox();
+            this.重置所有搜索条件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_printwangsingle = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_wangmultiple = new System.Windows.Forms.ToolStripMenuItem();
-            this.打印延生ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.单张竖版ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.四张横板ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_printyansingle = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_printyanmultiple = new System.Windows.Forms.ToolStripMenuItem();
             this.打印往生未打印项目ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.单张竖版ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.四张横板ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,7 +79,6 @@
             this.单张竖版ToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.四张横板ToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_fahuidetail = new System.Windows.Forms.MenuStrip();
-            this.复制操作ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dgvWang = new System.Windows.Forms.DataGridView();
             this.wID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -120,15 +120,15 @@
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.重置所有搜索条件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ToolStripMenuItem_baseop = new System.Windows.Forms.ToolStripMenuItem();
             ToolStripMenuItem_search = new System.Windows.Forms.ToolStripMenuItem();
             toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             ToolStripMenuItem_zihao = new System.Windows.Forms.ToolStripMenuItem();
             ToolStripMenuItem_wangzihao = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             ToolStripMenuItem_print = new System.Windows.Forms.ToolStripMenuItem();
             ToolStripMenuItem_printwang = new System.Windows.Forms.ToolStripMenuItem();
-            toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            ToolStripMenuItem_printyan = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_fahuidetail.SuspendLayout();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -174,6 +174,7 @@
             this.ToolStripMenuItem_del.Name = "ToolStripMenuItem_del";
             this.ToolStripMenuItem_del.Size = new System.Drawing.Size(146, 22);
             this.ToolStripMenuItem_del.Text = "删除选中项目";
+            this.ToolStripMenuItem_del.Click += new System.EventHandler(this.ToolStripMenuItem_del_Click);
             // 
             // ToolStripMenuItem_search
             // 
@@ -232,7 +233,7 @@
             ToolStripMenuItem_wangzihao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripComboBox_wangzihao});
             ToolStripMenuItem_wangzihao.Name = "ToolStripMenuItem_wangzihao";
-            ToolStripMenuItem_wangzihao.Size = new System.Drawing.Size(152, 22);
+            ToolStripMenuItem_wangzihao.Size = new System.Drawing.Size(98, 22);
             ToolStripMenuItem_wangzihao.Text = "往生";
             // 
             // toolStripComboBox_wangzihao
@@ -256,7 +257,7 @@
             this.延生ToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripComboBox2});
             this.延生ToolStripMenuItem1.Name = "延生ToolStripMenuItem1";
-            this.延生ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.延生ToolStripMenuItem1.Size = new System.Drawing.Size(98, 22);
             this.延生ToolStripMenuItem1.Text = "延生";
             // 
             // toolStripComboBox2
@@ -329,11 +330,22 @@
             this.toolStripTextBox4.Name = "toolStripTextBox4";
             this.toolStripTextBox4.Size = new System.Drawing.Size(100, 23);
             // 
+            // toolStripSeparator2
+            // 
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new System.Drawing.Size(167, 6);
+            // 
+            // 重置所有搜索条件ToolStripMenuItem
+            // 
+            this.重置所有搜索条件ToolStripMenuItem.Name = "重置所有搜索条件ToolStripMenuItem";
+            this.重置所有搜索条件ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.重置所有搜索条件ToolStripMenuItem.Text = "重置所有搜索条件";
+            // 
             // ToolStripMenuItem_print
             // 
             ToolStripMenuItem_print.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             ToolStripMenuItem_printwang,
-            this.打印延生ToolStripMenuItem,
+            ToolStripMenuItem_printyan,
             this.打印往生未打印项目ToolStripMenuItem,
             this.打印延生未打印项目ToolStripMenuItem,
             this.打印选中项目ToolStripMenuItem,
@@ -355,37 +367,39 @@
             // ToolStripMenuItem_printwangsingle
             // 
             this.ToolStripMenuItem_printwangsingle.Name = "ToolStripMenuItem_printwangsingle";
-            this.ToolStripMenuItem_printwangsingle.Size = new System.Drawing.Size(127, 22);
+            this.ToolStripMenuItem_printwangsingle.Size = new System.Drawing.Size(152, 22);
             this.ToolStripMenuItem_printwangsingle.Text = "单张-竖版";
             this.ToolStripMenuItem_printwangsingle.Click += new System.EventHandler(this.ToolStripMenuItem_printwangsingle_Click);
             // 
             // ToolStripMenuItem_wangmultiple
             // 
             this.ToolStripMenuItem_wangmultiple.Name = "ToolStripMenuItem_wangmultiple";
-            this.ToolStripMenuItem_wangmultiple.Size = new System.Drawing.Size(127, 22);
+            this.ToolStripMenuItem_wangmultiple.Size = new System.Drawing.Size(152, 22);
             this.ToolStripMenuItem_wangmultiple.Text = "四张-横板";
             this.ToolStripMenuItem_wangmultiple.Click += new System.EventHandler(this.ToolStripMenuItem_wangmultiple_Click);
             // 
-            // 打印延生ToolStripMenuItem
+            // ToolStripMenuItem_printyan
             // 
-            this.打印延生ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.单张竖版ToolStripMenuItem,
-            this.四张横板ToolStripMenuItem1});
-            this.打印延生ToolStripMenuItem.Name = "打印延生ToolStripMenuItem";
-            this.打印延生ToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.打印延生ToolStripMenuItem.Text = "打印延生";
+            ToolStripMenuItem_printyan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem_printyansingle,
+            this.ToolStripMenuItem_printyanmultiple});
+            ToolStripMenuItem_printyan.Name = "ToolStripMenuItem_printyan";
+            ToolStripMenuItem_printyan.Size = new System.Drawing.Size(218, 22);
+            ToolStripMenuItem_printyan.Text = "打印延生";
             // 
-            // 单张竖版ToolStripMenuItem
+            // ToolStripMenuItem_printyansingle
             // 
-            this.单张竖版ToolStripMenuItem.Name = "单张竖版ToolStripMenuItem";
-            this.单张竖版ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.单张竖版ToolStripMenuItem.Text = "单张-竖版";
+            this.ToolStripMenuItem_printyansingle.Name = "ToolStripMenuItem_printyansingle";
+            this.ToolStripMenuItem_printyansingle.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem_printyansingle.Text = "单张-竖版";
+            this.ToolStripMenuItem_printyansingle.Click += new System.EventHandler(this.ToolStripMenuItem_printyansingle_Click);
             // 
-            // 四张横板ToolStripMenuItem1
+            // ToolStripMenuItem_printyanmultiple
             // 
-            this.四张横板ToolStripMenuItem1.Name = "四张横板ToolStripMenuItem1";
-            this.四张横板ToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
-            this.四张横板ToolStripMenuItem1.Text = "四张-横板";
+            this.ToolStripMenuItem_printyanmultiple.Name = "ToolStripMenuItem_printyanmultiple";
+            this.ToolStripMenuItem_printyanmultiple.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem_printyanmultiple.Text = "四张-横板";
+            this.ToolStripMenuItem_printyanmultiple.Click += new System.EventHandler(this.ToolStripMenuItem_printyanmultiple_Click);
             // 
             // 打印往生未打印项目ToolStripMenuItem
             // 
@@ -508,7 +522,6 @@
             // 
             this.menuStrip_fahuidetail.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             ToolStripMenuItem_baseop,
-            this.复制操作ToolStripMenuItem,
             ToolStripMenuItem_print,
             ToolStripMenuItem_search});
             this.menuStrip_fahuidetail.Location = new System.Drawing.Point(0, 0);
@@ -516,12 +529,6 @@
             this.menuStrip_fahuidetail.Size = new System.Drawing.Size(937, 24);
             this.menuStrip_fahuidetail.TabIndex = 0;
             this.menuStrip_fahuidetail.Text = "menuStrip1";
-            // 
-            // 复制操作ToolStripMenuItem
-            // 
-            this.复制操作ToolStripMenuItem.Name = "复制操作ToolStripMenuItem";
-            this.复制操作ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.复制操作ToolStripMenuItem.Text = "复制操作";
             // 
             // splitContainer1
             // 
@@ -536,7 +543,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dgvYan);
-            this.splitContainer1.Size = new System.Drawing.Size(937, 511);
+            this.splitContainer1.Size = new System.Drawing.Size(937, 470);
             this.splitContainer1.SplitterDistance = 441;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -562,7 +569,7 @@
             this.dgvWang.Location = new System.Drawing.Point(0, 0);
             this.dgvWang.Name = "dgvWang";
             this.dgvWang.ReadOnly = true;
-            this.dgvWang.Size = new System.Drawing.Size(441, 511);
+            this.dgvWang.Size = new System.Drawing.Size(441, 470);
             this.dgvWang.TabIndex = 0;
             this.dgvWang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWang_CellClick);
             // 
@@ -581,7 +588,7 @@
             this.wZIHAO.HeaderText = "字号";
             this.wZIHAO.Name = "wZIHAO";
             this.wZIHAO.ReadOnly = true;
-            this.wZIHAO.Width = 56;
+            this.wZIHAO.Width = 54;
             // 
             // wZUOCI
             // 
@@ -590,7 +597,7 @@
             this.wZUOCI.HeaderText = "座次";
             this.wZUOCI.Name = "wZUOCI";
             this.wZUOCI.ReadOnly = true;
-            this.wZUOCI.Width = 56;
+            this.wZUOCI.Width = 54;
             // 
             // JIEYIN1
             // 
@@ -599,7 +606,7 @@
             this.JIEYIN1.HeaderText = "佛光接引一";
             this.JIEYIN1.Name = "JIEYIN1";
             this.JIEYIN1.ReadOnly = true;
-            this.JIEYIN1.Width = 92;
+            this.JIEYIN1.Width = 90;
             // 
             // JIEYIN2
             // 
@@ -608,7 +615,7 @@
             this.JIEYIN2.HeaderText = "佛光接引二";
             this.JIEYIN2.Name = "JIEYIN2";
             this.JIEYIN2.ReadOnly = true;
-            this.JIEYIN2.Width = 92;
+            this.JIEYIN2.Width = 90;
             // 
             // JIEYIN3
             // 
@@ -617,7 +624,7 @@
             this.JIEYIN3.HeaderText = "佛光接引三";
             this.JIEYIN3.Name = "JIEYIN3";
             this.JIEYIN3.ReadOnly = true;
-            this.JIEYIN3.Width = 92;
+            this.JIEYIN3.Width = 90;
             // 
             // JIEYIN4
             // 
@@ -626,7 +633,7 @@
             this.JIEYIN4.HeaderText = "佛光接引四";
             this.JIEYIN4.Name = "JIEYIN4";
             this.JIEYIN4.ReadOnly = true;
-            this.JIEYIN4.Width = 92;
+            this.JIEYIN4.Width = 90;
             // 
             // YANGSHANG1
             // 
@@ -635,7 +642,7 @@
             this.YANGSHANG1.HeaderText = "阳上一";
             this.YANGSHANG1.Name = "YANGSHANG1";
             this.YANGSHANG1.ReadOnly = true;
-            this.YANGSHANG1.Width = 68;
+            this.YANGSHANG1.Width = 66;
             // 
             // YANGSHANG2
             // 
@@ -644,7 +651,7 @@
             this.YANGSHANG2.HeaderText = "阳上二";
             this.YANGSHANG2.Name = "YANGSHANG2";
             this.YANGSHANG2.ReadOnly = true;
-            this.YANGSHANG2.Width = 68;
+            this.YANGSHANG2.Width = 66;
             // 
             // YANGSHANG3
             // 
@@ -653,7 +660,7 @@
             this.YANGSHANG3.HeaderText = "阳上三";
             this.YANGSHANG3.Name = "YANGSHANG3";
             this.YANGSHANG3.ReadOnly = true;
-            this.YANGSHANG3.Width = 68;
+            this.YANGSHANG3.Width = 66;
             // 
             // YANGSHANG4
             // 
@@ -662,7 +669,7 @@
             this.YANGSHANG4.HeaderText = "阳上四";
             this.YANGSHANG4.Name = "YANGSHANG4";
             this.YANGSHANG4.ReadOnly = true;
-            this.YANGSHANG4.Width = 68;
+            this.YANGSHANG4.Width = 66;
             // 
             // wHAS_PRINT
             // 
@@ -671,7 +678,7 @@
             this.wHAS_PRINT.HeaderText = "是否已打印";
             this.wHAS_PRINT.Name = "wHAS_PRINT";
             this.wHAS_PRINT.ReadOnly = true;
-            this.wHAS_PRINT.Width = 73;
+            this.wHAS_PRINT.Width = 71;
             // 
             // dgvYan
             // 
@@ -691,7 +698,7 @@
             this.dgvYan.Location = new System.Drawing.Point(0, 0);
             this.dgvYan.Name = "dgvYan";
             this.dgvYan.ReadOnly = true;
-            this.dgvYan.Size = new System.Drawing.Size(492, 511);
+            this.dgvYan.Size = new System.Drawing.Size(492, 470);
             this.dgvYan.TabIndex = 0;
             this.dgvYan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvYan_CellClick);
             // 
@@ -710,7 +717,7 @@
             this.yZIHAO.HeaderText = "字号";
             this.yZIHAO.Name = "yZIHAO";
             this.yZIHAO.ReadOnly = true;
-            this.yZIHAO.Width = 56;
+            this.yZIHAO.Width = 54;
             // 
             // yZUOCI
             // 
@@ -719,7 +726,7 @@
             this.yZUOCI.HeaderText = "座次";
             this.yZUOCI.Name = "yZUOCI";
             this.yZUOCI.ReadOnly = true;
-            this.yZUOCI.Width = 56;
+            this.yZUOCI.Width = 54;
             // 
             // ZHUZHAO1
             // 
@@ -728,7 +735,7 @@
             this.ZHUZHAO1.HeaderText = "佛光注照一";
             this.ZHUZHAO1.Name = "ZHUZHAO1";
             this.ZHUZHAO1.ReadOnly = true;
-            this.ZHUZHAO1.Width = 92;
+            this.ZHUZHAO1.Width = 90;
             // 
             // ZHUZHAO2
             // 
@@ -737,7 +744,7 @@
             this.ZHUZHAO2.HeaderText = "佛光注照二";
             this.ZHUZHAO2.Name = "ZHUZHAO2";
             this.ZHUZHAO2.ReadOnly = true;
-            this.ZHUZHAO2.Width = 92;
+            this.ZHUZHAO2.Width = 90;
             // 
             // ZHUZHAO3
             // 
@@ -746,7 +753,7 @@
             this.ZHUZHAO3.HeaderText = "佛光注照三";
             this.ZHUZHAO3.Name = "ZHUZHAO3";
             this.ZHUZHAO3.ReadOnly = true;
-            this.ZHUZHAO3.Width = 92;
+            this.ZHUZHAO3.Width = 90;
             // 
             // ZHUZHAO4
             // 
@@ -755,7 +762,7 @@
             this.ZHUZHAO4.HeaderText = "佛光注照四";
             this.ZHUZHAO4.Name = "ZHUZHAO4";
             this.ZHUZHAO4.ReadOnly = true;
-            this.ZHUZHAO4.Width = 92;
+            this.ZHUZHAO4.Width = 90;
             // 
             // yHAS_PRINT
             // 
@@ -764,7 +771,7 @@
             this.yHAS_PRINT.HeaderText = "是否已打印";
             this.yHAS_PRINT.Name = "yHAS_PRINT";
             this.yHAS_PRINT.ReadOnly = true;
-            this.yHAS_PRINT.Width = 73;
+            this.yHAS_PRINT.Width = 71;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -910,22 +917,11 @@
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             this.dataGridViewTextBoxColumn18.ReadOnly = true;
             // 
-            // toolStripSeparator2
-            // 
-            toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new System.Drawing.Size(167, 6);
-            // 
-            // 重置所有搜索条件ToolStripMenuItem
-            // 
-            this.重置所有搜索条件ToolStripMenuItem.Name = "重置所有搜索条件ToolStripMenuItem";
-            this.重置所有搜索条件ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.重置所有搜索条件ToolStripMenuItem.Text = "重置所有搜索条件";
-            // 
             // FormFahuiDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(937, 535);
+            this.ClientSize = new System.Drawing.Size(937, 494);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip_fahuidetail);
             this.MainMenuStrip = this.menuStrip_fahuidetail;
@@ -955,7 +951,6 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_addyan;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_modify;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_del;
-        private System.Windows.Forms.ToolStripMenuItem 复制操作ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_showwang;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_showyan;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_showall;
@@ -1011,9 +1006,8 @@
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox4;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_printwangsingle;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_wangmultiple;
-        private System.Windows.Forms.ToolStripMenuItem 打印延生ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 单张竖版ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 四张横板ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_printyansingle;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_printyanmultiple;
         private System.Windows.Forms.ToolStripMenuItem 打印往生未打印项目ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 单张竖版ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 四张横板ToolStripMenuItem2;

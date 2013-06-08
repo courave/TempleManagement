@@ -113,6 +113,8 @@
     </Compile>
     <Compile Include="print\ClassWangMultiple.cs" />
     <Compile Include="print\ClassWangSingle.cs" />
+    <Compile Include="print\ClassYanMultiple.cs" />
+    <Compile Include="print\ClassYanSingle.cs" />
     <Compile Include="print\CrystalReport_wangmultiple.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -123,6 +125,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrystalReport_wangsingle.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="print\CrystalReport_yanprintmultiple.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport_yanprintmultiple.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="print\CrystalReport_yansingle.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport_yansingle.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="print\FormPrintWangMultiple.cs">
@@ -136,6 +150,18 @@
     </Compile>
     <Compile Include="print\FormPrintWangSingle.Designer.cs">
       <DependentUpon>FormPrintWangSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\FormPrintYanMultiple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\FormPrintYanMultiple.Designer.cs">
+      <DependentUpon>FormPrintYanMultiple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\FormPrintYanSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\FormPrintYanSingle.Designer.cs">
+      <DependentUpon>FormPrintYanSingle.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -225,11 +251,25 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport_wangsingle.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="print\CrystalReport_yanprintmultiple.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport_yanprintmultiple.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\CrystalReport_yansingle.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport_yansingle.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="print\FormPrintWangMultiple.resx">
       <DependentUpon>FormPrintWangMultiple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="print\FormPrintWangSingle.resx">
       <DependentUpon>FormPrintWangSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\FormPrintYanMultiple.resx">
+      <DependentUpon>FormPrintYanMultiple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\FormPrintYanSingle.resx">
+      <DependentUpon>FormPrintYanSingle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

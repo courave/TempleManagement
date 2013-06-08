@@ -146,6 +146,52 @@ namespace TempleManagement.fahui
             frmPrintWangMultiple.ShowDialog();
         }
 
+        private void ToolStripMenuItem_del_Click(object sender, EventArgs e)
+        {
+            String msg = "";
+            if (dgvWang.SelectedRows.Count > 0)
+            {
+                msg = "确定要删除这"+dgvWang.SelectedRows.Count+"条记录吗？";
+                DialogResult dr = MessageBox.Show(msg, "确认删除", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr != DialogResult.Yes) return;
+                using (DataBase db = new DataBase())
+                {
+                    foreach (DataGridViewRow dgvr in dgvWang.SelectedRows)
+                    {
+                        db.ExecuteNonQuery("DELETE FROM FAHUI_WANG WHERE ID=" + dgvr.Cells["ID"].Value.ToString());
+                    }
+                }
+                LoadWang(wangQuery);
+
+            }
+            else if (dgvYan.SelectedRows.Count > 0)
+            {
+                msg = "确定要删除这" + dgvYan.SelectedRows.Count + "条记录吗？";
+                DialogResult dr = MessageBox.Show(msg, "确认删除", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr != DialogResult.Yes) return;
+                using (DataBase db = new DataBase())
+                {
+                    foreach (DataGridViewRow dgvr in dgvYan.SelectedRows)
+                    {
+                        db.ExecuteNonQuery("DELETE FROM FAHUI_YAN WHERE ID=" + dgvr.Cells["ID"].Value.ToString());
+                    }
+                }
+                LoadYan(yanQuery);
+            }
+        }
+
+        private void ToolStripMenuItem_printyansingle_Click(object sender, EventArgs e)
+        {
+            print.FormPrintYanSingle frmPrintYanSingle = new print.FormPrintYanSingle(fahuiid);
+            frmPrintYanSingle.ShowDialog();
+        }
+
+        private void ToolStripMenuItem_printyanmultiple_Click(object sender, EventArgs e)
+        {
+            print.FormPrintYanMultiple frmPrintYanMultiple = new print.FormPrintYanMultiple(fahuiid);
+            frmPrintYanMultiple.ShowDialog();
+        }
+
 
     }
 }

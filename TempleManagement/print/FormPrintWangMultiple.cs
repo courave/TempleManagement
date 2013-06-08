@@ -90,7 +90,7 @@ namespace TempleManagement.print
                 String[] yss = ys.Split(';');
                 if (yss.Count() > 0)
                 {
-                    wangMultiple.ys3_1 = yss[0].Trim(';');
+                    wangMultiple.ys1_1 = yss[0].Trim(';');
                 }
                 if (yss.Count() > 1)
                 {
@@ -98,7 +98,7 @@ namespace TempleManagement.print
                 }
                 if (yss.Count() > 2)
                 {
-                    wangMultiple.ys1_1 = yss[2].Trim(';');
+                    wangMultiple.ys3_1 = yss[2].Trim(';');
                 }
                 if (yss.Count() > 3)
                 {
@@ -153,7 +153,7 @@ namespace TempleManagement.print
                 yss = ys.Split(';');
                 if (yss.Count() > 0)
                 {
-                    wangMultiple.ys3_2 = yss[0].Trim(';');
+                    wangMultiple.ys1_2 = yss[0].Trim(';');
                 }
                 if (yss.Count() > 1)
                 {
@@ -161,7 +161,7 @@ namespace TempleManagement.print
                 }
                 if (yss.Count() > 2)
                 {
-                    wangMultiple.ys1_2 = yss[2].Trim(';');
+                    wangMultiple.ys3_2 = yss[2].Trim(';');
                 }
                 if (yss.Count() > 3)
                 {
@@ -216,7 +216,7 @@ namespace TempleManagement.print
                 yss = ys.Split(';');
                 if (yss.Count() > 0)
                 {
-                    wangMultiple.ys3_3 = yss[0].Trim(';');
+                    wangMultiple.ys1_3 = yss[0].Trim(';');
                 }
                 if (yss.Count() > 1)
                 {
@@ -224,7 +224,7 @@ namespace TempleManagement.print
                 }
                 if (yss.Count() > 2)
                 {
-                    wangMultiple.ys1_3 = yss[2].Trim(';');
+                    wangMultiple.ys3_3 = yss[2].Trim(';');
                 }
                 if (yss.Count() > 3)
                 {
@@ -279,7 +279,7 @@ namespace TempleManagement.print
                 yss = ys.Split(';');
                 if (yss.Count() > 0)
                 {
-                    wangMultiple.ys3_4 = yss[0].Trim(';');
+                    wangMultiple.ys1_4 = yss[0].Trim(';');
                 }
                 if (yss.Count() > 1)
                 {
@@ -287,7 +287,7 @@ namespace TempleManagement.print
                 }
                 if (yss.Count() > 2)
                 {
-                    wangMultiple.ys1_4 = yss[2].Trim(';');
+                    wangMultiple.ys3_4 = yss[2].Trim(';');
                 }
                 if (yss.Count() > 3)
                 {

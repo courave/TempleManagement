@@ -16,14 +16,14 @@ namespace TempleManagement.print {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class CrystalReport_wangmultiple : ReportClass {
+    public class CrystalReport_yanprintmultiple : ReportClass {
         
-        public CrystalReport_wangmultiple() {
+        public CrystalReport_yanprintmultiple() {
         }
         
         public override string ResourceName {
             get {
-                return "CrystalReport_wangmultiple.rpt";
+                return "CrystalReport_yanprintmultiple.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace TempleManagement.print {
         
         public override string FullResourceName {
             get {
-                return "TempleManagement.print.CrystalReport_wangmultiple.rpt";
+                return "TempleManagement.print.CrystalReport_yanprintmultiple.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace TempleManagement.print {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedCrystalReport_wangmultiple : Component, ICachedReport {
+    public class CachedCrystalReport_yanprintmultiple : Component, ICachedReport {
         
-        public CachedCrystalReport_wangmultiple() {
+        public CachedCrystalReport_yanprintmultiple() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace TempleManagement.print {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            CrystalReport_wangmultiple rpt = new CrystalReport_wangmultiple();
+            CrystalReport_yanprintmultiple rpt = new CrystalReport_yanprintmultiple();
             rpt.Site = this.Site;
             return rpt;
         }
