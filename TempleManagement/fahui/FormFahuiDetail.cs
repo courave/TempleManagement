@@ -190,6 +190,7 @@ namespace TempleManagement.fahui
         {
             print.FormPrintYanMultiple frmPrintYanMultiple = new print.FormPrintYanMultiple(fahuiid);
             frmPrintYanMultiple.ShowDialog();
+            
         }
 
 
